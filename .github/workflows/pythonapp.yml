@@ -12,7 +12,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - uses: action/checkout@v1
+    - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "dab8106" --password-stdin
