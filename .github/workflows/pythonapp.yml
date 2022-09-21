@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build 
+    - name: Builds 
       run: |
         docker image build -t dab8106/pyflask:latest .
         
